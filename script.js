@@ -1,10 +1,17 @@
 let entrada = document.getElementById("insertar");
 let salida = document.getElementById("salida");
 const copia = document.getElementById("copiar");
+const nada = document.getElementById("nada");
+const nadita = document.getElementById("nadita");
 
 
-function redireccionar() {
+function redireccionar(valor) {
+    if(valor == 1){
     window.location.href = "encriptador.html";
+    }
+    else if(valor == 2){
+        window.location.href = "https://www.linkedin.com/in/david-soto-castro/";
+    }
   }
 
   function encriptar(){
@@ -13,6 +20,8 @@ function redireccionar() {
 
     salida.style.display = "flex";
     copia.style.display= "flex";
+    nada.style.display = "none";
+    nadita.style.display= "none";
 
     let diccionarioEncriptar = {};
 
@@ -44,6 +53,7 @@ for(let i = 0; i<texto.length;i++){
 salida.value=resultado;
 
 entrada.value="";
+
 }
  }
 
@@ -52,6 +62,8 @@ entrada.value="";
 
   salida.style.display = "flex";
   copia.style.display= "flex";
+  nada.style.display = "none";
+  nadita.style.display= "none";
 
   let texto=entrada.value;
   let resultado = "";
