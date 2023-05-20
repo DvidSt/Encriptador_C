@@ -1,0 +1,201 @@
+body{
+    font-family: Inter;
+    background-image: url(imagenes/Fondo.png);
+    background-size:cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0;
+    padding: 0;
+    
+}
+.caja{
+    position: absolute;
+    background: #e2d8ff;
+    opacity: 0.8;
+    width: 100%;
+    height: 6vw;
+    border-bottom: 0.7vw solid #000;
+    padding: 0;
+    box-sizing:border-box;
+    
+
+}
+
+.caja h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4vw;
+    font-style: italic;
+    
+}
+
+.info{
+    position: absolute;
+    background: #e2d8ff;
+    top: 25%;
+    left:15%;
+    height: 21vw;
+    width: 40vw;
+    opacity: 0.8;
+    border: 0.5vw solid #523f8a;
+    border-radius: 4vw;
+    box-shadow: -1vw 1vw 0vw 0vw #000;
+    
+   
+}
+.info h1{
+    position: absolute;
+    font-size: 3vw;
+    top:1.5vw;
+    left: 1vw;
+    font-style: italic;
+
+}
+.info textarea{
+    position: absolute;
+    top: 6vw;
+    left: 1.5vw;
+    background: #e2d8ff;
+    height: 60%;
+    width: 90%;
+    border: none;
+    resize: none;
+    font-size: 1vw;
+    font-weight: bold;
+    color: black;
+}
+.dirigir{
+    position: absolute;
+    top: 48%;
+    left:75%;
+}
+.dirigir button{
+    border: .2vw solid #523f8a;
+    border-radius:1vw;
+    background:  #e2d8ff;
+    width: 10vw;
+    height: 3vw;
+    font-size: 1.5vw;
+    box-sizing: border-box;
+    box-shadow: -.5vw .5vw 0vw 0vw #000;
+}
+
+.dirigir button:hover{
+    background:  #523f8a;
+    border: .2vw solid #000;
+    color: #fff;
+}
+
+
+.fin{
+    position: absolute;
+    background: #e2d8ff;
+    opacity: 0.8;
+    width: 100%;
+    height: 6vw;
+    border-top: 0.7vw solid #000;
+    padding: 0;
+    box-sizing:border-box;
+    bottom: 0;
+    
+}
+
+ .abajo-uno{
+    position: absolute;
+    background: #e7e9fb;
+    top:1.2vw;
+    left: 20%;
+    width: 17vw;
+    height: 2vw;
+    border: 0.4vw solid #000;
+    border-radius: 2vw;
+
+}
+
+.abajo-uno h1{
+    text-align: center;
+    font-size: 1vw;
+    font-style: italic;
+
+}
+
+.abajo-dos{
+    position: absolute;
+    background: #e7e9fb;
+    top:1.2vw;
+    left: 73%;
+    width: 10vw;
+    height: 2vw;
+    border: 0.4vw solid #000;
+    border-radius: 2vw;
+    font-style: italic;
+}
+.abajo-dos img{
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    height: 2vw;
+    width: 2vw;
+}
+.abajo-dos h1{
+    position: absolute;
+    left: 25%;
+    top:18%;
+    font-size: 1.3vw;
+    
+}
+
+/*Estilos del Encriptador*/
+
+.contenido{
+    position: absolute;
+    background: #e2d8ff;
+    width: 80%;
+    height: 60%;
+    top: 18%;
+    left: 10%;
+    opacity: 0.8;
+    border-radius: 2vw;
+    border: .5vw solid #000;
+}
+.contenido textarea{
+   position: absolute;
+   background: #efebfa;;
+   top: 3%;
+   left: 1%;
+   height: 90%;
+   width: 40%;
+   font-size: 2vw;
+   border: .25vw solid #000;
+   border-radius: 1vw;
+   resize: none;
+}
+.contenido button{
+    display: flex;
+    position: absolute;
+    left: 45.5%;
+    background: #523f8a;
+    color: white;
+    top:37%;
+    height: 2.5vw;
+    width: auto;
+    font-size: 1.5vw;
+    border: .3vw solid #000;
+    border-radius: 1vw;
+}
+.contenido button+button{
+    top:60%;
+    left: 44%;
+}
+.contenido button+textarea{
+    left: 57.7%;
+}
+.contenido button+textarea{
+    left: 57.7%;
+}
+#copiar{
+    left: 75%;
+    top: 80%;
+}
