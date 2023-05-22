@@ -11,6 +11,8 @@ function redireccionar(valor) {
     }
     else if(valor == 2){
         window.location.href = "https://www.linkedin.com/in/david-soto-castro/";
+    }else if(valor == 3){
+        window.location.href = "https://www.oracle.com/co/education/oracle-next-education/";
     }
   }
 
@@ -54,6 +56,11 @@ salida.value=resultado;
 
 entrada.value="";
 
+}else{
+    salida.style.display = "none";
+    copia.style.display= "none";
+    nada.style.display = "flex";
+    nadita.style.display= "flex";
 }
  }
 
@@ -73,6 +80,12 @@ entrada.value="";
   salida.value=resultado;
   entrada.value="";
   }
+  else{
+    salida.style.display = "none";
+    copia.style.display= "none";
+    nada.style.display = "flex";
+    nadita.style.display= "flex";
+}
 
 }
 
