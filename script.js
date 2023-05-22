@@ -3,6 +3,7 @@ let salida = document.getElementById("salida");
 const copia = document.getElementById("copiar");
 const nada = document.getElementById("nada");
 const nadita = document.getElementById("nadita");
+const mensaje =  document.getElementById("mensaje");
 
 
 function redireccionar(valor) {
@@ -13,6 +14,8 @@ function redireccionar(valor) {
         window.location.href = "https://www.linkedin.com/in/david-soto-castro/";
     }else if(valor == 3){
         window.location.href = "https://www.oracle.com/co/education/oracle-next-education/";
+    }else if(valor == 4){
+        window.location.href = "index.html";
     }
   }
 
@@ -94,5 +97,10 @@ function copiar(){
  salida.focus();
  document.execCommand('selectAll');
  document.execCommand('copy');
+ 
+ mensaje.style.display = "flex";
+
+ setTimeout(() =>  mensaje.style.display = "none", 1000);
+ 
  
 }

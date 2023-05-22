@@ -31,6 +31,10 @@ body{
     
 }
 
+.caja h1:hover{
+    cursor: pointer;
+}
+
 .info{
     position: absolute;
     background: #e2d8ff;
@@ -192,13 +196,31 @@ body{
 .contenido button+textarea{
     left: 57.7%;
 }
-.contenido button+textarea{
-    left: 57.7%;
+.contenido button+textarea:focus{
+    outline: none;
 }
+.contenido button+textarea::-moz-selection{
+    background-color: transparent;
+}
+.contenido button+textarea::selection{
+    background-color: transparent;
+}
+
 #copiar{
     left: 75%;
     top: 80%;
     display: none;
+}
+#mensaje{
+    position: absolute;
+    display: none;
+    left: 74.5%;
+    top: 70%;
+    font-size: 1vw;
+    border: .2vw solid #000;
+    border-radius: 1vw;
+    background: #e2d8ff;
+    
 }
 #salida{
     display: none;
@@ -223,7 +245,7 @@ body{
     
    
 }
-
+/*Tabletas*/
 @media screen and (max-width:1000px) {
     .caja{
         height: 8vw; 
@@ -313,7 +335,7 @@ body{
     }
     .contenido button{
         top:50%;
-        left: 20%;
+        left: 13%;
         height: 4.5vw;
         width: auto;
         font-size: 3.5vw;
@@ -334,6 +356,16 @@ body{
         left: 42%;
         top: 94%;
         display: none;
+    }
+    #mensaje{
+        
+        left: 39%;
+        top: 88%;
+        font-size: 3vw;
+        border: .2vw solid #000;
+        border-radius: 1vw;
+        background: #e2d8ff;
+        
     }
     #salida{
         display: none;

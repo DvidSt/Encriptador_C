@@ -11,8 +11,8 @@
 
 </head>
 <body>
-    <header class="caja">
-        <h1 >Proyecto Encriptador</h1>
+    <header class="caja" >
+        <h1 onclick="redireccionar(4)">Proyecto Encriptador</h1>
     </header>
 
     <main>
@@ -22,6 +22,7 @@
             <button onclick="desencriptar()">Desencriptar</button>
             <textarea id="salida" placeholder="Ningun Mensaje fue encontrado..." readonly></textarea>
             <button id="copiar" onclick="copiar()">Copiar</button>
+            <span id="mensaje">Texto Copiado</span>
             <img id="nada" src="imagenes/a.gif">
             <p id="nadita">No puedo trabajar si no encuentro un mensaje, introduce uno por favor UwU</p>
         </section>
